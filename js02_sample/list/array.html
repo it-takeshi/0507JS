@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>配列の練習</title>
+</head>
+
+<body>
+    <h1>配列の練習</h1>
+    <button id="btn">表示</button>
+    <div id="echo"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            //ここに処理を追加
+            const list01 = ["月", "火", "水", "木", "金", "土", "日"];
+            const list02 = new Array("月", "火", "水", "木", "金", "土", "日");
+
+            // 自分で配列を作ってみよう
+const list03=["福岡","長崎","大分","熊本","佐賀",];
+
+const list04=["A","B","C","D","E",];
+
+            // 配列の中身を表示してみよう
+console.log(list03);
+console.log(list03[1]);
+console.log(list04);
+console.log(list04[4]);
+console.log(list04[3]);
+
+
+            // 配列の長さを表示しよう
+console.log(list03.length);
+console.log(list04.length);
+
+
+            // ボタンクリック時にブラウザ上に表示してみよう
+$('#btn').on('click',function(){
+$('#echo').html(list02);
+});
+
+});
+</script>
+</body>
+
+</html>
